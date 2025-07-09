@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/images/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Recipe Generator</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <img
+        src="/images/eggSticker.png"
+        alt="Egg Sticker"
+        class="egg-sticker sticker"
+      />
+
+      <form id="recipe-generator-form">
+        <div class="title-mobile">Recipe Generator</div>
+        <input
+          type="text"
+          placeholder="Enter the recipe you want to generate"
+          autofocus
+          required
+          autocomplete="off"
+          class="instructions"
+          id="user-instructions"
+        />
+        <input type="submit" class="submit-button" />
+
+        <div class="hint">
+          <strong>Hint:</strong> You can ask for a specific recipe, or describe
+          the type of dish you want, like "a vegan pasta recipe".
+          <br />
+          You can use any language
+        </div>
+        <img
+          src="/images/cakeSticker.png"
+          alt="cake sticker"
+          class="cake-sticker sticker"
+        />
+      </form>
+    </div>
+
+    <div class="paper">
+      <img
+        src="/images/croissantSticker.png"
+        alt="croissantSticker"
+        class="croissant-sticker sticker"
+      />
+      <img
+        src="/images/breadSticker.png"
+        alt="bread sticker"
+        class="bread-sticker sticker"
+      />
+      <div class="title">Recipe Generator</div>
+      <div class="lines">
+        <div class="text" id="recipe-text" spellcheck="false"></div>
+      </div>
+      <div class="holes hole-top"></div>
+      <div class="holes hole-middle"></div>
+      <div class="holes hole-bottom"></div>
+    </div>
+
+    <div class="sticker-column">
+      <img src="/images/honeySticker.png" class="sticker-item" alt="Sticker " />
+      <img
+        src="/images/knifeSticker.png"
+        class="sticker-item"
+        alt="Sticker 3"
+      />
+      <img
+        src="/images/carrotSticker.png"
+        class="sticker-item"
+        alt="Sticker 1"
+      />
+    </div>
+
+    <footer>
+      This AI project was coded by
+      <a href="https://github.com/mayza-ferreira" target="_blank"
+        >Mayza Ferreira</a
+      >
+      , is
+      <a
+        href="https://github.com/mayza-ferreira/Recipe-AI-Generator-"
+        target="_blank"
+      >
+        open-sourced on GitHub</a
+      >
+      and is
+      <a href="https://airecipegenerator-mf.netlify.app" target="_blank"
+        >hosted on Netlify</a
+      >.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/src/index.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </body>
+</html>
